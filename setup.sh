@@ -1,7 +1,9 @@
 #!/bin/bash
 
-# Copy .zshrc into home folder
+# Copy zsh config into home folder
+cp .zshenv ~/.zshenv
 cp .zshrc ~/.zshrc
+cp .zlogin ~/.zlogin
 
 # Disable icon bounce in Dock
 defaults write com.apple.dock no-bouncing -bool TRUE
