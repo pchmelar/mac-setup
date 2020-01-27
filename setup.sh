@@ -17,6 +17,11 @@ defaults write com.apple.finder AppleShowAllFiles YES
 # Show build duration in Xcode
 defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
 
+# Limit Spotify cache size to 1GB
+echo 'storage.size=1024' >> ~/Library/Application\ Support/Spotify/prefs
+
 # Restart apps
 killall Dock
 killall Finder
+killall Xcode
+killall Spotify
