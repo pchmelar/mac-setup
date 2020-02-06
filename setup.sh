@@ -39,6 +39,7 @@ echo 'storage.size=1024' >> ~/Library/Application\ Support/Spotify/prefs
 
 # Set Sublime preferences
 cp Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+cp FocusOnLoad.py ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/FocusOnLoad.py
 
 # Restart apps
 killall Dock
