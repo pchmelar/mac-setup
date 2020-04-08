@@ -6,3 +6,18 @@ alias ll='ls -lah'
 
 # Alias for Sublime Text
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
+# Set default editor to nano
+export EDITOR=nano
+export VISUAL="$EDITOR"
+
+# Enable autocomplete for git
+autoload -Uz compinit && compinit
+
+# Show branch name in git folders
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+PROMPT='%1~'\$vcs_info_msg_0_'$ '
+zstyle ':vcs_info:git:*' formats '(%b)'
