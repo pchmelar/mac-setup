@@ -41,6 +41,11 @@ echo 'storage.size=1024' >> ~/Library/Application\ Support/Spotify/prefs
 cp Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 cp FocusOnLoad.py ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/FocusOnLoad.py
 
+# Enable proper resolution for DELL P2421DC
+sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
+sudo mkdir -p /Library/Displays/Contents/Resources/Overrides/DisplayVendorID-10ac
+sudo cp DisplayProductID-d0f9 /Library/Displays/Contents/Resources/Overrides/DisplayVendorID-10ac/DisplayProductID-d0f9
+
 # Restart apps
 killall Dock
 killall Finder
