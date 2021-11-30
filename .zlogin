@@ -4,3 +4,6 @@
 
 # Load rbenv to setup ruby properly
 eval "$(rbenv init -)"
+
+# Load Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"

@@ -9,18 +9,16 @@ cp .zlogin ~/.zlogin
 cp .gitconfig ~/.gitconfig
 
 # Setup Homebrew and install frequently used brews
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install carthage
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 brew install pngquant
 brew install rbenv
-brew install awscli
 
 # Setup Ruby and install frequently used gems
-rbenv install 2.6.3
-rbenv global 2.6.3
+rbenv install 2.6.8
+rbenv global 2.6.8
 ~/.rbenv/shims/gem install bundler
 ~/.rbenv/shims/gem install xcode-install
-~/.rbenv/shims/gem install iStats
 
 # Disable icon bounce in Dock
 defaults write com.apple.dock no-bouncing -bool TRUE
@@ -38,13 +36,7 @@ defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
 echo 'storage.size=1024' >> ~/Library/Application\ Support/Spotify/prefs
 
 # Set Sublime preferences
-cp Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
-cp FocusOnLoad.py ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/FocusOnLoad.py
-
-# Enable proper resolution for DELL P2421DC
-sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
-sudo mkdir -p /Library/Displays/Contents/Resources/Overrides/DisplayVendorID-10ac
-sudo cp DisplayProductID-d0f9 /Library/Displays/Contents/Resources/Overrides/DisplayVendorID-10ac/DisplayProductID-d0f9
+cp Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text/Packages/User/Preferences.sublime-settings
 
 # Restart apps
 killall Dock

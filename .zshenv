@@ -10,8 +10,3 @@ export LC_ALL="en_US.UTF-8"
 # Setup path to twine folder
 export TWINE_FOLDER="/Users/filletzz/Develop/twine-localization"
 
-# Setup POE access token
-export POEDITOR_TOKEN="5271248ade93e28d98052aafa26ea14e"
-
-# Setup AWS for Rome
-export AWS_PROFILE="rome"
