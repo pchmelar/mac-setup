@@ -13,12 +13,14 @@ cp .gitconfig ~/.gitconfig
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew install pngquant
 brew install rbenv
+brew install mint
 
 # Setup Ruby and install frequently used gems
 rbenv install 2.6.8
 rbenv global 2.6.8
 ~/.rbenv/shims/gem install bundler
 ~/.rbenv/shims/gem install xcode-install
+~/.rbenv/shims/gem install twine
 
 # Disable icon bounce in Dock
 defaults write com.apple.dock no-bouncing -bool TRUE
@@ -31,6 +33,9 @@ defaults write com.apple.finder AppleShowAllFiles YES
 
 # Show build duration in Xcode
 defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
+
+# Enable Xcode to use system SSH for downloading private Swift Packages
+defaults write com.apple.dt.Xcode IDEPackageSupportUseBuiltinSCM YES
 
 # Limit Spotify cache size to 1GB
 echo 'storage.size=1024' >> ~/Library/Application\ Support/Spotify/prefs
