@@ -6,6 +6,10 @@ alias ll='ls -lah'
 
 # Alias for Sublime Text
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias gitsubl='GIT_EDITOR="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -w"'
+
+# Alias for Heureka VPN
+alias vpn='echo "<PASSWORD>" | sudo openconnect vpn.hadmin.cz --authgroup=Default --user=<USERNAME> --passwd-on-stdin'
 
 # Set default editor to nano
 export EDITOR=nano
@@ -21,3 +25,6 @@ precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 PROMPT='%1~'\$vcs_info_msg_0_'$ '
 zstyle ':vcs_info:git:*' formats '(%b)'
+
+# JDK setup
+export JAVA_HOME=$(/usr/libexec/java_home -v 11)
