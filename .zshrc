@@ -9,8 +9,8 @@ alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias gitsubl='GIT_EDITOR="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -w"'
 
 # Alias for Heureka VPN
-alias vpn='echo "<PASSWORD>" | sudo openconnect vpn.hadmin.cz --authgroup=Default --user=<USERNAME> --passwd-on-stdin'
-alias vpnclean='sudo route delete vpn.hadmin.cz'
+alias vpn='echo "<PASSWORD>" | sudo openconnect vpn.heureka.group/external --authgroup=Default --user=<USERNAME> --passwd-on-stdin'
+alias vpnclean='sudo route delete vpn.heureka.group'
 
 # Set default editor to nano
 export EDITOR=nano
