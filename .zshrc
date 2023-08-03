@@ -26,6 +26,3 @@ precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 PROMPT='%1~'\$vcs_info_msg_0_'$ '
 zstyle ':vcs_info:git:*' formats '(%b)'
-
-# JDK setup
-export JAVA_HOME=$(/usr/libexec/java_home -v 11)

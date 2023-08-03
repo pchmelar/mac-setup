@@ -13,13 +13,10 @@ cp .gitconfig ~/.gitconfig
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew install pngquant
 brew install rbenv
-brew install mint
 
 # Setup Ruby and install frequently used gems
-rbenv install 2.6.8
-rbenv global 2.6.8
-~/.rbenv/shims/gem install bundler
-~/.rbenv/shims/gem install xcode-install
+rbenv install 3.2.2
+rbenv global 3.2.2
 ~/.rbenv/shims/gem install twine
 
 # Disable icon bounce in Dock
