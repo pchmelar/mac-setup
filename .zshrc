@@ -12,6 +12,9 @@ alias gitsubl='GIT_EDITOR="/Applications/Sublime\ Text.app/Contents/SharedSuppor
 alias vpn='echo "<PASSWORD>" | sudo openconnect vpn.heureka.group/external --authgroup=Default --user=<USERNAME> --passwd-on-stdin'
 alias vpnclean='sudo route delete vpn.heureka.group'
 
+# Alias for VNC
+alias vnc='/usr/bin/open -a Safari vnc://localhost && ssh -L 5900:localhost:5900 work'
+
 # Set default editor to nano
 export EDITOR=nano
 export VISUAL="$EDITOR"
