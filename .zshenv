@@ -2,11 +2,8 @@
 # It should contain commands to set the command search path, plus other important environment variables.
 # .zshenv should not contain commands that produce output or assume the shell is attached to a tty.
 
-# Load Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# Load rbenv to setup ruby properly
-eval "$(rbenv init -)"
+# rbenv setup
+export PATH="$HOME/.rbenv/shims:${PATH}"
 
 # JDK setup
 export JAVA_HOME=$(/usr/libexec/java_home -v 17.0.7)

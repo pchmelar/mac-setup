@@ -1,6 +1,12 @@
 # .zshrc is sourced in interactive shells.
 # It should contain commands to set up aliases, functions, options, key bindings, etc.
 
+# Load Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Load rbenv
+eval "$(rbenv init - zsh)"
+
 # Alias for ll command
 alias ll='ls -lah'
 
