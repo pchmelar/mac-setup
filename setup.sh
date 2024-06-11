@@ -5,6 +5,9 @@ cp .zshenv ~/.zshenv
 cp .zshrc ~/.zshrc
 cp .zlogin ~/.zlogin
 
+# Copy ssh config into home folder
+cp ssh-config ~/.ssh/config
+
 # Copy git config into home folder
 cp .gitconfig ~/.gitconfig
 

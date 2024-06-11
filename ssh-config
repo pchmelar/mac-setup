@@ -1,0 +1,29 @@
+Host matee-mac
+  User filletzz
+  HostName 83.148.16.22
+  Port 7777
+  IdentityFile ~/.ssh/id_ed25519
+
+Host matee-mac-local
+  User filletzz
+  HostName 192.168.88.200
+  Port 22
+  IdentityFile ~/.ssh/id_ed25519
+
+Host matee-ubuntu
+  User matee
+  HostName 83.148.16.22
+  Port 8888
+  IdentityFile ~/.ssh/id_ed25519
+
+Host matee-ubuntu-local
+  User matee
+  HostName 192.168.88.53
+  Port 22
+  IdentityFile ~/.ssh/id_ed25519
+
+Host heureka
+  User petr.chmelar
+  HostName 207.254.29.84
+  Port 22
+  IdentityFile ~/.ssh/id_ed25519

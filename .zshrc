@@ -14,12 +14,11 @@ alias ll='ls -lah'
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias gitsubl='GIT_EDITOR="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -w"'
 
-# Alias for Heureka VPN
-alias vpn='echo "<PASSWORD>" | sudo openconnect vpn.heureka.group/external --authgroup=Default --user=<USERNAME> --passwd-on-stdin'
-alias vpnclean='sudo route delete vpn.heureka.group'
-
 # Alias for VNC
-alias vnc='/usr/bin/open -a Safari vnc://localhost && ssh -L 5900:localhost:5900 work'
+alias vnc-matee-mac='open -a Safari vnc://localhost && ssh -L 5900:localhost:5900 matee-mac'
+alias vnc-matee-mac-local='open vnc://192.168.88.200'
+alias vnc-matee-ubuntu='open -a Safari vnc://localhost && ssh -L 5900:localhost:5900 matee-ubuntu'
+alias vnc-matee-ubuntu-local='open vnc://192.168.88.53'
 
 # Set default editor to nano
 export EDITOR=nano
